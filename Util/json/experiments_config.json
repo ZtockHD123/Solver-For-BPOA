@@ -1,0 +1,51 @@
+{
+    "_comentarios": {
+        "ben": "Indica si se van a procesar funciones BEN.",
+        "scp": "Indica si se van a procesar instancias SCP.",
+        "uscp": "Indica si se van a procesar instancias USCP.",
+        "kp": "Indica si se van a procesar instancias de KP.",
+        "mhs": "Lista de metaheurísticas que se van a procesar.",
+        "DS_actions": "Lista de acciones de binarización de la población.",
+        "dimensiones": "Mapea cada función BEN a las dimensiones que utiliza.",
+        "experimentos": "Parámetros globales de iteraciones y población para cada problema.",
+        "instancias": "Identificadores de los instancias de los problemas que se van a procesar."
+    },
+
+    "ben": false,
+    "scp": true,
+    "uscp": true,
+    "kp": true,
+
+    "mhs": ["SBOA","AOA","POA","PSO"],
+
+    "DS_actions": ["V3-ELIT", "V3-STD", "S1-ELIT","S1-STD"],
+
+    "dimensiones": {
+        "BEN": {
+            "F1": [30], "F2": [30], "F3": [30], "F4": [30], "F5": [30], "F6": [30],
+            "F7": [30], "F8": [30], "F9": [30], "F10": [30], "F11": [30], "F12": [30], "F13": [30],
+            "F14": [2], "F15": [4], "F16": [2], "F17": [2], "F18": [2],
+            "F19": [3], "F20": [6], "F21": [4], "F22": [4], "F23": [4]
+        }
+    },
+
+    "experimentos": {
+        "BEN": {"iteraciones": 100, "poblacion": 50, "num_experimentos": 1},
+        "SCP": {"iteraciones": 100, "poblacion": 10, "num_experimentos": 31},
+        "USCP": {"iteraciones": 100, "poblacion": 10, "num_experimentos": 31},
+        "KP": {"iteraciones": 100, "poblacion": 10, "num_experimentos": 31}
+
+    },
+
+    "instancias": {
+        "BEN": ["F8"],
+        "SCP": ["41", "51", "61", "a1", "b1", "c1", "d1", "nre1", "nrf1", "nrg1", "nrh1"],
+        "USCP": ["u41", "u51", "ua1", "ub1", "uc1", "ud1", "unre1", "unrf1", "unrg1", "unrh1","uclr10","ucyc08"],
+        "KP": ["knapPI_1_100_1000_1", "knapPI_1_200_1000_1", "knapPI_1_500_1000_1", 
+        "knapPI_1_1000_1000_1", "knapPI_1_2000_1000_1", "knapPI_1_5000_1000_1", "knapPI_1_10000_1000_1",
+        "knapPI_2_100_1000_1", "knapPI_2_200_1000_1", "knapPI_2_500_1000_1",
+        "knapPI_2_1000_1000_1", "knapPI_2_2000_1000_1", "knapPI_2_5000_1000_1", "knapPI_2_10000_1000_1",
+        "knapPI_3_100_1000_1", "knapPI_3_200_1000_1", "knapPI_3_500_1000_1",
+        "knapPI_3_1000_1000_1", "knapPI_3_2000_1000_1", "knapPI_3_5000_1000_1", "knapPI_3_10000_1000_1"]
+    }
+}
